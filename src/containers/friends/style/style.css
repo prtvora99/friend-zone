@@ -1,0 +1,117 @@
+.list {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list .no-friends h5 {
+  font-size: 20px;
+}
+
+.list .no-friends ul {
+  padding: 0px 15px;
+}
+
+.list .no-friends li {
+  line-height: 2em;
+}
+
+.friend {
+  background-color: #9999990d;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #99999947;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.friend p {
+  font-size: 18px;
+  margin: 8px 0;
+  width: 60%;
+}
+
+.friend p .help-text {
+  font-size: 10px;
+  display: block;
+  margin-top: 5px;
+}
+
+.table-data {
+  width: 35%;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.table-data .title {
+  font-weight: 500;
+  margin: 0px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 9999;
+}
+
+.icon-frame {
+  border: 1px solid #99999994;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-frame.delete:hover {
+  background: #ff0000a6;
+  color: #fff;
+}
+
+/* .icon-frame.favorite:hover, */
+.icon-frame.favorite.marked {
+  background: #282c34;
+  color: #fff;
+}
+
+.icon-frame i {
+  font-size: 22px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid #999;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+.sort span {
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination button {
+  margin: 3px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  font-weight: 600;
+  border: 1px solid;
+}
